@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-arcgis-cary",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Town of Cary GIS — Cary, North Carolina open geospatial data (ArcGIS).",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-a77239974b4f726d70757b1bab79a62398eaec69d53d896faa59b5bbc88a516e",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-3d9b9dc991837284b84a99a3c8db51dc115baedad4601b5bff54708b7cd334f4",
+    "sourceCommit": "dca20ba6e13a9aa1c9f2918fc2ddaffe4cc30e5c"
   }
 }
