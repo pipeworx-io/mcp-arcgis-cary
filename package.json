@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-arcgis-cary",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Town of Cary GIS — Cary, North Carolina open geospatial data (ArcGIS).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-arcgis-cary": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "arcgis-cary"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-arcgis-cary.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/arcgis-cary",
   "pipeworx": {
-    "sourceHash": "v1-69a086ce9490db92fbd4e4cf7134a4bea63f2744bd5ae51557f4e70f7ba2421b",
-    "sourceCommit": "71f5325b13bb0ea0de2f0f7207885962ec91a484"
+    "mode": "gateway",
+    "slug": "arcgis-cary",
+    "gatewaySlug": "arcgis-cary",
+    "sourceHash": "v1-1225b1a79c3c8ae066a04f52c18828fd51cd1fb105a4cb18efe09b2f89a1ee79",
+    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
   }
 }
